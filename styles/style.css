@@ -1,11 +1,18 @@
+body {
+  background: #000 center/cover url() no-repeat
+  
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /* height: 600px; */
+}
 
-
+Navbar Start
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     text-align: center;
-    background-color: black;
+    background-color: none;
     width: 100vw;
     height: 2vw;
     z-index: 10;
@@ -15,7 +22,21 @@
   .navbar a {
     color: green;
     font-size: larger;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-right: 5%;
     padding-left: 5%;
+    transition: 1s ease;
   }
+
+
+.navbar a:hover {
+    color: tomato;
+    transform: scale(0)
+
+  /* this is not working:
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); */
+}
+/* Navbar End  */
+
+
