@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <a href="https://www.freeforexapi.com">
-        <img alt="Free Forex API" src="https://www.freeforexapi.com/Images/link.png" height="20">
-    </a>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +8,41 @@
 </head>
 <body>
 
-    
+<form id="submit-currency">
+    Amount<input type="text" name='curr-value' id="curr-value" value="1"><br><br>
+    <label for='base-currency'>Choose Your Currency!</label>
+    <select id="base-currency">
+        <option value='USD'>USD</option>
+        <option value='EUR'>EUR</option>
+        <option value='JPY'>JPY</option>
+        <option value='CAD'>CAD</option>
+        <option value='GBP'>GBP</option>
+        <option value='HKD'>HKD</option>
+        <option value='ZAR'>ZAR</option>
+        <option value='BRL'>BRL</option>
+        <option value='AUD'>AUD</option>
+        <option value='SEK'>SEK</option>
+    </select>
+<br><br>
+    <label for="return-currency">Exchange To</label>
+    <select id="return-currency">
+        <option value='USD'>USD</option>
+        <option value='EUR' selected="selected">EUR</option>
+        <option value='JPY'>JPY</option>
+        <option value='CAD'>CAD</option>
+        <option value='GBP'>GBP</option>
+        <option value='HKD'>HKD</option>
+        <option value='ZAR'>ZAR</option>
+        <option value='BRL'>BRL</option>
+        <option value='AUD'>AUD</option>
+        <option value='SEK'>SEK</option>
+    </select>
+    <button id="submit-button">Submit</button>
+</form>
 
+
+
+</div>
     <script src="index.js"></script>
 </body>
 </html>

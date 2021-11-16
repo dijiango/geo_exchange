@@ -1,3 +1,38 @@
-fetch('https://www.freeforexapi.com/api/live')
-.then(response => response.json())
-.then(data => console.log(data))
+
+const returnCurrencyTrigger = document.getElementById('return-currency');
+const currencyTrigger = document.getElementById('base-currency');
+const submitCurrencyForm = document.getElementById('submit-currency');
+let currencyResponse = document.createElement('h1')
+currencyResponse.textContent = ''
+submitCurrencyForm.append(currencyResponse)
+
+let currencyType = `USD`
+let baseCurrency = "base=" + currencyType;
+let returnCurrencyType = `EUR`
+
+currencyTrigger.addEventListener("change", (e)=> {
+    currencyType = `${currencyTrigger.value}`
+    baseCurrency = "base=" + currencyType;})
+returnCurrencyTrigger.addEventListener("change", (e) => {
+
+    returnCurrencyType = `${returnCurrencyTrigger.value}`
+})
+
+submitCurrencyForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let currValue = document.getElementById('curr-value')
+    fetch(`https://api.vatcomply.com/rates?${baseCurrency}`)
+    .then(response => response.json())
+    .then(data => getCorrectCurrency(data))
+
+    function getCorrectCurrency(obj){
+    for(let key in obj.rates){
+        let currencyMultiplier = currValue.value
+        if(key === returnCurrencyType){
+            currencyResponse.textContent = (obj.rates[key]) * currencyMultiplier
+        }
+        }
+    }
+})
+
+
