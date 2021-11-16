@@ -5,8 +5,9 @@
     top: 0;
     left: 0;
     text-align: center;
-    background-color: none;
+    background-color: black;
     width: 100vw;
+    height: 2vw;
     z-index: 10;
     border-bottom: none;
   }
