@@ -13,10 +13,60 @@
     margin: 50px;
 }
 
-#pin-1 {
+#pin-canada {
     height: 30px;
     width: auto;
     position: absolute;
     top: 50px;
     left: 635px;
+}
+
+#pin-united-states {
+    height: 30px;
+    width: auto;
+}
+
+#pin-brasil {
+    height: 30px;
+    width: auto;
+}
+
+#pin-united-kingdom {
+    height: 30px;
+    width: auto;
+}
+
+#pin-sweden {
+    height: 30px;
+    width: auto;
+}
+
+#pin-europe {
+    height: 30px;
+    width: auto;
+}
+
+#pin-south-africa {
+    height: 30px;
+    width: auto;
+}
+
+#pin-russia {
+    height: 30px;
+    width: auto;
+}
+
+#pin-japan {
+    height: 30px;
+    width: auto;
+}
+
+#pin-hong-kong {
+    height: 30px;
+    width: auto;
+}
+
+#pin-aussie {
+    height: 30px;
+    width: auto;
 }
