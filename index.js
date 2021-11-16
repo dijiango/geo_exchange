@@ -17,6 +17,14 @@ returnCurrencyTrigger.addEventListener("change", (e) => {
 
     returnCurrencyType = `${returnCurrencyTrigger.value}`
 })
+let minimizeToggle = document.getElementById('minimize');
+minimizeToggle.addEventListener("click", () => {
+if(submitCurrencyForm.style.display === "none"){
+    submitCurrencyForm.style.display = "block";}
+else {submitCurrencyForm.style.display = "none"}
+
+})
+
 
 submitCurrencyForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -34,5 +42,3 @@ submitCurrencyForm.addEventListener("submit", (e) => {
         }
     }
 })
-
-
