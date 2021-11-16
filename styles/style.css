@@ -1,12 +1,12 @@
 body {
-  background: #000 center/cover url() no-repeat
+  background: #000 center/cover url(/images/Space-Image6.jpg) no-repeat
   
   /* background-repeat: no-repeat;
   background-size: cover; */
   /* height: 600px; */
 }
 
-Navbar Start
+/* Navbar Start */
 .navbar {
     position: fixed;
     top: 0;
@@ -30,7 +30,7 @@ Navbar Start
 
 
 .navbar a:hover {
-    color: tomato;
+    color: lime;
     transform: scale(0)
 
   /* this is not working:
