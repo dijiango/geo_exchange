@@ -1,0 +1,15 @@
+#current-globe {
+    margin: auto;
+    display: block;
+    height: auto;
+    width: 75%;
+}
+
+.earth button{
+    background-color: gold;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 50px;
+}
+
