@@ -24,9 +24,7 @@ if(submitCurrencyForm.style.display === "none"){
 else {submitCurrencyForm.style.display = "none"}
 
 })
-// if(submitCurrencyForm.style.display === "none"){
-//     submitCurrencyForm.style.display = "block";}
-// else {submitCurrencyForm.style.display = "none"}
+
 
 submitCurrencyForm.addEventListener("submit", (e) => {
     e.preventDefault();
