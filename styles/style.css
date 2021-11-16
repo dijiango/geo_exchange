@@ -1,0 +1,20 @@
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: none;
+    width: 100vw;
+    z-index: 10;
+    border-bottom: none;
+  }
+
+  .navbar a {
+    color: green;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 5%;
+    padding-left: 5%;
+  }

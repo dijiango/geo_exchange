@@ -5,41 +5,41 @@ fetch('https://api.vatcomply.com/rates?base=USD')
 
 console.log("Let's do this")
 
-// ####### This is the nav bar #######
+// ####### This is the nav bar ####### Msu
 
 const newNavbar = document.createElement("nav");
-const homeLink = document.createElement("a");
-const githLink = document.createElement("a");
-const twitLink = document.createElement("a");
-const instaLink = document.createElement("a");
+const geoLocator = document.createElement("a");
+const meetTheTeam = document.createElement("a");
+const aboutTheProject = document.createElement("a");
+const moreFeaturesToCome = document.createElement("a");
 
 
 newNavbar.className = "navbar";
 
-homeLink.href = "./index.html";
-homeLink.innerText = "Home";
+geoLocator.href = "./index.html";
+geoLocator.innerText = "Geo Locator";
 
-githLink.href = "https://github.com/Mumrawsingh";
-githLink.innerText = "Github";
-githLink.target = "_blank";
+meetTheTeam.href = "https://github.com/Mumrawsingh";
+meetTheTeam.innerText = "Meet the team";
+meetTheTeam.target = "_blank";
 
-twitLink.href = "https://twitter.com/iLikeItLikeMatt";
-twitLink.innerText = "Twitter";
-twitLink.target = "_blank";
+aboutTheProject.href = "https://twitter.com/iLikeItLikeMatt";
+aboutTheProject.innerText = "About this project";
+aboutTheProject.target = "_blank";
 
-instaLink.href = "https://www.instagram.com/el_shiloh_/?hl=en";
-instaLink.innerText = "My Puppy";
-instaLink.target = "_blank";
+moreFeaturesToCome.href = "https://www.instagram.com/el_shiloh_/?hl=en";
+moreFeaturesToCome.innerText = "More features to come";
+moreFeaturesToCome.target = "_blank";
 
-    if (document.title === "Planet Matt | Home") {
-        newNavbar.append(projectLink)
+    if (document.title === "Geo Exchange | Home") {
+        newNavbar.append(aboutTheProject)
 }   else {
-        newNavbar.append(homeLink)
+        newNavbar.append(geoLocator)
 }
 
 document.body.querySelector(".container").prepend(newNavbar)
-newNavbar.append(githLink)
-newNavbar.append(twitLink)
-newNavbar.append(instaLink)
+newNavbar.append(meetTheTeam)
+newNavbar.append(aboutTheProject)
+newNavbar.append(moreFeaturesToCome)
 
 // ####### This is the nav bar #######
