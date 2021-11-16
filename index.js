@@ -19,15 +19,15 @@ newNavbar.className = "navbar";
 geoLocator.href = "./index.html";
 geoLocator.innerText = "Geo Locator";
 
-meetTheTeam.href = "https://github.com/Mumrawsingh";
+meetTheTeam.href = "https://www.cia.gov/the-world-factbook/countries/";
 meetTheTeam.innerText = "Meet the team";
 meetTheTeam.target = "_blank";
 
-aboutTheProject.href = "https://twitter.com/iLikeItLikeMatt";
+aboutTheProject.href = "https://www.federalreserve.gov/releases/h10/current/";
 aboutTheProject.innerText = "About this project";
 aboutTheProject.target = "_blank";
 
-moreFeaturesToCome.href = "https://www.instagram.com/el_shiloh_/?hl=en";
+moreFeaturesToCome.href = "https://www.babypips.com/learn";
 moreFeaturesToCome.innerText = "More features to come";
 moreFeaturesToCome.target = "_blank";
 
