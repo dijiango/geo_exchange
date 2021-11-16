@@ -1,8 +1,9 @@
+//DIANA
 const globe = document.querySelector('#current-globe');
 const leftBtn = document.getElementById('left-turn');
 const rightBtn = document.getElementById('right-turn');
 const goHome = document.getElementById('return-home');
-const countryPin = document.querySelector('.country-pins h1');
+const currentCountry = document.querySelector('.country-pins');
 
 //image src tag
 let imgNum = 2;
@@ -44,63 +45,72 @@ goHome.addEventListener("click", () => {
 //add pins to images
 function countryPins() {
     if (imgNum === 1) {
-        countryPin.textContent = "You are currently in the US and Canada";
+        currentCountry.textContent = "You are currently in the US and Canada";
         console.log("Img ", imgNum);
-    } 
-    else if (imgNum === 2) {
-        countryPin.textContent = "You are currently in Brazil";
+        canadaPin();
+    } else if (imgNum === 2) {
+        currentCountry.textContent = "You are currently in Brazil";
         console.log("Img ", imgNum);
-    }
-    else if (imgNum === 3) {
-        countryPin.textContent = "You are currently NOT in the US";
+    } else if (imgNum === 3) {
+        currentCountry.textContent = "You are currently NOT in the US";
         console.log("Img ", imgNum);
-    }
-    else if (imgNum === 4) {
-        countryPin.textContent = "You are currently NOT in the US";
+    } else if (imgNum === 4) {
+        currentCountry.textContent = "You are currently NOT in the US";
         console.log("Img ", imgNum);
-    }
-    else if (imgNum === 5) {
-        countryPin.textContent = "You are currently in the UK and Sweden";
+    } else if (imgNum === 5) {
+        currentCountry.textContent = "You are currently in the UK and Sweden";
         console.log("Img ", imgNum);
-    }else if (imgNum === 6) {
-        countryPin.textContent = "You are currently in Europe and South Africa";
+    } else if (imgNum === 6) {
+        currentCountry.textContent = "You are currently in Europe and South Africa";
         console.log("Img ", imgNum);
-    }else if (imgNum === 7) {
-        countryPin.textContent = "You are currently NOT in the US";
+    } else if (imgNum === 7) {
+        currentCountry.textContent = "You are currently NOT in the US";
         console.log("Img ", imgNum);
-    }else if (imgNum === 8) {
-        countryPin.textContent = "You are currently in Russia";
+    } else if (imgNum === 8) {
+        currentCountry.textContent = "You are currently in Russia";
         console.log("Img ", imgNum);
-    }else if (imgNum === 9) {
-        countryPin.textContent = "You are currently in Japan";
+    } else if (imgNum === 9) {
+        currentCountry.textContent = "You are currently in Japan and Hong Kong";
         console.log("Img ", imgNum);
-    }else if (imgNum === 10) {
-        countryPin.textContent = "You are currently in Australia";
+    } else if (imgNum === 10) {
+        currentCountry.textContent = "You are currently in Australia";
         console.log("Img ", imgNum);
-    }else if (imgNum === 11) {
-        countryPin.textContent = "You are currently NOT in the US";
+    } else if (imgNum === 11) {
+        currentCountry.textContent = "You are currently NOT in the US";
         console.log("Img ", imgNum);
-    }else if (imgNum === 12) {
-        countryPin.textContent = "You are currently NOT in the US";
+    } else if (imgNum === 12) {
+        currentCountry.textContent = "You are currently NOT in the US";
         console.log("Img ", imgNum);
-    }else if (imgNum === 13) {
-        countryPin.textContent = "You are currently NOT in the US";
+    } else if (imgNum === 13) {
+        currentCountry.textContent = "You are currently NOT in the US";
         console.log("Img ", imgNum);
-    }else if (imgNum === 14) {
-        countryPin.textContent = "You are currently NOT in the US";
+    } else if (imgNum === 14) {
+        currentCountry.textContent = "You are currently NOT in the US";
         console.log("Img ", imgNum);
-    }else if (imgNum === 15) {
-        countryPin.textContent = "You are currently NOT in the US";
+    } else if (imgNum === 15) {
+        currentCountry.textContent = "You are currently NOT in the US";
         console.log("Img ", imgNum);
     }
+};
+
+//creation of button function
+function createPin() {
+    while (currentCountry.hasChildNodes === true) {
+        currentCountry.removeChildren();
+    }
+    const createH1 = document.createElement('h1');
+    const pin = document.createElement('img');
+        pin.id = `pin-${imgNum}`;
+        pin.src = "other-images/pin.png";
+        pin.alt = "Pin";
+
+    currentCountry.append(createH1);
+    createH1.append(pin);
 }
 
-//button pins for countries
-// function createPin() {
-//     const pin = document.createElement('button');
-    
-// }
-
-// function canadaPin() {
-    
-// }
+//pins for each country
+function canadaPin() {
+    if (imgNum === 1) {
+        createPin();
+    }
+}

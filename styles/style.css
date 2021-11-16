@@ -13,6 +13,10 @@
     margin: 50px;
 }
 
-body {
-    background-color: lightblue;
+#pin-1 {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 50px;
+    left: 635px;
 }
