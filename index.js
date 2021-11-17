@@ -38,32 +38,30 @@ newNavbar.append(aboutTheProject)
 newNavbar.append(moreFeaturesToCome)
 
 // ####### This is the nav bar #######
+const baseCurrency ="USD"
+fetch(`https://api.vatcomply.com/rates?base=${baseCurrency}`)
+.then(response => response.json())
+ .then(data => renderData(data)
 
-const cardCollection = document.getElementById("currencyContainer")
-console.log(cardCollection);
+)
 
-function pullCard(countries) {
+function renderData(object1) {
+        const cardContainer = document.getElementById("currencyContainer")
+        // const rateAgainstUSD = document.createElement("p")
         const countryCard = document.createElement("div")
-        const countryName = document.createElement("h3")
-        const monetaryImage = document.createElement("img")
-        const rateAgainstUSD = document.createElement("p")
         const lastDateUpdated = document.createElement("p")
-        const countryDescription = document.createElement("h5")
 
-        countryCard.append(countryName, monetaryImage, rateAgainstUSD, countryDescription);
-        cardCollection.appendChild(countryCard)
+        lastDateUpdated.textContent = object1.date
+
+        countryCard.append(lastDateUpdated)
+        cardContainer.append(countryCard)
+
 }
 
 
-// function renderCards()
+
 // fetch('https://api.vatcomply.com/rates?base=USD')
 // .then(response => response.json())
-// .then(currency => { currency.forEach(pullCard);
-//         console.log(renderCards);
-// }); 
-
-fetch('https://api.vatcomply.com/rates?base=USD')
-.then(response => response.json())
-.then(data =>{ console.log("doesthiswork", data)})
+// .then(data =>{ console.log("doesthiswork", data)})
 
 
