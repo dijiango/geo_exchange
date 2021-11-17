@@ -54,7 +54,7 @@ const currentCountry = document.querySelector('#country-pins');
 
 //image src tag
 let imgNum = 2;
-const baseImg = "earth-images/" + imgNum + ".jpg";
+const baseImg = "earth-images/" + imgNum + ".png";
 globe.src = baseImg; 
 
 function rotateLeft() {
@@ -64,7 +64,7 @@ function rotateLeft() {
     else {
         --imgNum;
     }
-    globe.src = "earth-images/" + imgNum + ".jpg"; 
+    globe.src = "earth-images/" + imgNum + ".png"; 
     countryPins();
 };
 
@@ -75,7 +75,7 @@ function rotateRight() {
     else {
         ++imgNum;
     }
-    globe.src = "earth-images/" + imgNum + ".jpg";
+    globe.src = "earth-images/" + imgNum + ".png";
     countryPins();
 }
 
@@ -85,7 +85,7 @@ rightBtn.addEventListener("click", rotateRight);
 
 goHome.addEventListener("click", () => {
     imgNum = 1;
-    globe.src = "earth-images/" + imgNum + ".jpg";
+    globe.src = "earth-images/" + imgNum + ".png";
     countryPins();
 });
 
