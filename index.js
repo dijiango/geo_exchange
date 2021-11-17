@@ -41,7 +41,41 @@ submitCurrencyForm.addEventListener("submit", (e) => {
         }
         }
     }
+    fetch(`https://api.vatcomply.com/rates?${baseCurrency}`)
+.then(response => response.json())
+ .then(data => renderData(data))
 })
+
+
+
+
+
+//MATT
+
+let cardContainer = document.getElementById("currencyContainer")
+
+
+function renderData(object1) {
+       for(let currency1 in object1.rates){
+           if(currency1 === returnCurrencyType){
+      
+       const countryCard = document.createElement("div")
+       countryCard.className = "cards"
+       const lastDateUpdated = document.createElement("p")
+       const rateAgainstBase = document.createElement("p")
+
+       lastDateUpdated.textContent = `Last Updated: ${object1.date}`
+       rateAgainstBase.textContent = `${object1.rates[currency1]} ${currency1} per 1 ${currencyType}`
+
+       countryCard.append(lastDateUpdated,rateAgainstBase)
+       cardContainer.append(countryCard)
+           }
+}
+}
+
+
+
+
 
 
 

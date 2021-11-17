@@ -101,6 +101,40 @@
     left: 52%;
 }
 body {
-    background-image: url("../Space-Image8.jpg")
+    background-image: url("../Space-Image8.jpg");
+    color: azure;
     
 }
+.cards{
+
+border: solid;
+color:silver;
+border-color:silver;
+padding: 50px;
+margin: 30px;
+float: left;
+text-align: center;
+top: 400px;
+left: 700px;
+width: 300px;
+height: auto;
+box-shadow: #13f4ef;
+transition: 1s;
+}
+
+#form-box{
+
+    border: solid;
+    color:silver;
+    border-color:silver;
+    padding: 50px;
+    margin: 30px;
+    float: left;
+    text-align: center;
+    top: 400px;
+    left: 700px;
+    width: 300px;
+    height: auto;
+    box-shadow: #13f4ef;
+    transition: 1s;
+    }
