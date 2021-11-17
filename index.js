@@ -38,7 +38,8 @@ newNavbar.append(aboutTheProject)
 newNavbar.append(moreFeaturesToCome)
 
 // ####### This is the nav bar #######
-const baseCurrency ="USD"
+// const baseCurrency = "base=" +
+
 fetch(`https://api.vatcomply.com/rates?base=${baseCurrency}`)
 .then(response => response.json())
  .then(data => renderData(data)
@@ -47,17 +48,20 @@ fetch(`https://api.vatcomply.com/rates?base=${baseCurrency}`)
 
 function renderData(object1) {
         const cardContainer = document.getElementById("currencyContainer")
-        // const rateAgainstUSD = document.createElement("p")
+
         const countryCard = document.createElement("div")
         const lastDateUpdated = document.createElement("p")
+        const rateAgainstBase = document.createElement("p")
 
         lastDateUpdated.textContent = object1.date
+        rateAgainstBase.textContent = object1.rates.
 
         countryCard.append(lastDateUpdated)
         cardContainer.append(countryCard)
 
 }
 
+// 1.75 / 1 USD
 
 
 // fetch('https://api.vatcomply.com/rates?base=USD')
