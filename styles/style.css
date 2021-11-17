@@ -1,0 +1,102 @@
+#current-globe {
+    margin: auto;
+    display: block;
+    height: auto;
+    width: 50%;
+}
+
+.earth button{
+    background-color: gold;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 50px;
+}
+
+#pin-canada {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 48%;
+}
+
+#pin-united-states {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 11%;
+    left: 52%;
+}
+
+#pin-brasil {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 33%;
+    left: 53%;
+}
+
+#pin-united-kingdom {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 3%;
+    left: 48%;
+}
+
+#pin-sweden {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 3%;
+    left: 51%;
+}
+
+#pin-europe {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 6%;
+    left: 48%;
+}
+
+#pin-south-africa {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 53%;
+    left: 49%;
+}
+
+#pin-russia {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+#pin-japan {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 13%;
+    left: 57%;
+}
+
+#pin-hong-kong {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 19%;
+    left: 53%;
+}
+
+#pin-aussie {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+}
