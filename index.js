@@ -1,8 +1,3 @@
-fetch('https://api.vatcomply.com/rates?base=USD')
-.then(response => response.json())
-.then(data => console.log(data))
-
-
 console.log("Let's do this")
 
 // ####### This is the nav bar ####### Msu
@@ -43,4 +38,27 @@ newNavbar.append(aboutTheProject)
 newNavbar.append(moreFeaturesToCome)
 
 // ####### This is the nav bar #######
+
+const cardCollection = document.getElementById("currencyContainer")
+console.log(cardCollection);
+
+function pullCard(countries) {
+        const countryCard =document.createElement("div")
+        const countryName =document.createElement("h3")
+        const monetaryImage =document.createElement("img")
+        const rateAgainstUSD =document.createElement("p")
+        const countryDescription =document.createElement("h5")
+}
+
+
+// function renderCards()
+// fetch('https://api.vatcomply.com/rates?base=USD')
+// .then(response => response.json())
+// .then(currency => { currency.forEach(pullCard);
+//         console.log(renderCards);
+// }); 
+
+
+
+
 
