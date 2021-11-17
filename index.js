@@ -43,11 +43,15 @@ const cardCollection = document.getElementById("currencyContainer")
 console.log(cardCollection);
 
 function pullCard(countries) {
-        const countryCard =document.createElement("div")
-        const countryName =document.createElement("h3")
-        const monetaryImage =document.createElement("img")
-        const rateAgainstUSD =document.createElement("p")
-        const countryDescription =document.createElement("h5")
+        const countryCard = document.createElement("div")
+        const countryName = document.createElement("h3")
+        const monetaryImage = document.createElement("img")
+        const rateAgainstUSD = document.createElement("p")
+        const lastDateUpdated = document.createElement("p")
+        const countryDescription = document.createElement("h5")
+
+        countryCard.append(countryName, monetaryImage, rateAgainstUSD, countryDescription);
+        cardCollection.appendChild(countryCard)
 }
 
 
@@ -58,7 +62,8 @@ function pullCard(countries) {
 //         console.log(renderCards);
 // }); 
 
-
-
+fetch('https://api.vatcomply.com/rates?base=USD')
+.then(response => response.json())
+.then(data =>{ console.log("doesthiswork", data)})
 
 
