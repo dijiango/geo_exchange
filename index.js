@@ -43,3 +43,4 @@ newNavbar.append(aboutTheProject)
 newNavbar.append(moreFeaturesToCome)
 
 // ####### This is the nav bar #######
+
