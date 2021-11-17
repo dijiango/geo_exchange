@@ -3,7 +3,7 @@ const globe = document.querySelector('#current-globe');
 const leftBtn = document.getElementById('left-turn');
 const rightBtn = document.getElementById('right-turn');
 const goHome = document.getElementById('return-home');
-const currentCountry = document.querySelector('.country-pins');
+const currentCountry = document.querySelector('#country-pins');
 
 //image src tag
 let imgNum = 2;
@@ -110,14 +110,13 @@ function createPin(x) {
     while (currentCountry.hasChildNodes === true) {
         currentCountry.removeChildren();
     }
-    const createH1 = document.createElement('h1');
     const pin = document.createElement('img');
         pin.id = `pin-${x}`;
         pin.src = "other-images/pin.png";
         pin.alt = "Pin";
 
-    currentCountry.append(createH1);
-    createH1.append(pin);
+    currentCountry.append(pin);
+    pin.addEventListener("click", () => console.log("You clicked on", x));
 }
 
 //pins for each country
