@@ -21,7 +21,7 @@
 }
 
 #meet-the-team:hover:after {
-    content: url(http://placekitten.com/200/300);
+    content: url(meet-the-team.png);
     display: block;
     position: absolute;
     top: 50%;
@@ -40,12 +40,13 @@
 }
 
 #more-features:hover:after {
-    content: url(http://placekitten.com/200/300);
+    content: url(more-features.png);
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-style: double;
 }
 
 #current-globe {
