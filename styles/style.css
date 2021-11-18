@@ -165,3 +165,8 @@ transition: 1s;
     box-shadow: #13f4ef;
     transition: 1s;
     }
+    #minimize{
+        position:absolute;
+        top: 50px;;
+        left: 50px;;
+    }
