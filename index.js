@@ -1,10 +1,12 @@
 //NAV BAR
-const nav1 = document.querySelector('#geo-locator');
-const nav2 = document.querySelector('#meet-the-team');
-const nav3 = document.querySelector('#about-this-project');
-const nav4 = document.querySelector('#more-features');
+// const nav1 = document.querySelector('#geo-locator');
+// const nav2 = document.querySelector('#meet-the-team');
+// const nav3 = document.querySelector('#about-this-project');
+// const nav4 = document.querySelector('#more-features');
 
-
+// nav1.addEventListener("mouseover", () => {
+    
+// })
 //STEPHEN
 let pins = document.getElementsByClassName('pins')
 const returnCurrencyTrigger = document.getElementById('return-currency');
