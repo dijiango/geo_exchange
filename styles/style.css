@@ -66,7 +66,7 @@
 
 .earth button{
     position: relative;
-    color: cyan;
+    color: silver;
     background-color: black;
     left:auto;
     text-align: center;
@@ -184,22 +184,6 @@ body {
     color: azure;
     
 }
-.cards{
-
-border: solid;
-color:silver;
-border-color:silver;
-padding: 50px;
-margin: 30px;
-float: left;
-text-align: center;
-top: 400px;
-left: 700px;
-width: 300px;
-height: auto;
-box-shadow: #13f4ef;
-transition: 1s;
-}
 
 #form-box{
     position: absolute;
@@ -218,10 +202,13 @@ transition: 1s;
     transition: 1s;
     }
     #form-box:hover{
+       
         border: 3px;
-        border-color: tomato;
-        color: #68FF00;
+        background-color: rgba(255, 191, 0, 0.5);
+        color: tomato;
+        text-shadow: 2px 2px black;
         box-shadow: -2px -2px 7px 7px  #FAFF00;
+        
         
     } /*MSU*/
 
@@ -241,15 +228,33 @@ transition: 1s;
         width: auto
     }
 
+.cards{
+
+        border: solid;
+        color:silver;
+        border-color:silver;
+        padding: 50px;
+        margin: 30px;
+        float: left;
+        text-align: center;
+        top: 400px;
+        left: 600px;
+        width: 300px;
+        height: auto;
+        box-shadow: #13f4ef;
+        transition: 1s;
+}
+
 div.cards {
     position: absolute;
     border: none;
     top: 50px;
-    left: 950px;
-    width: 250px;
+    left: 900px;
+    width: 230px;
     height: 450px;
-    transition: 1s ease-in;
+    transition: 1s ease-in; /*MSU*/
 } /*MSU*/
+
 div.cards:hover {
     border: 3px;
         color:#68FF00;
