@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.navbar h1 {
+.navbar a {
     color:silver;
     font-size: x-large;
     font-weight: bold;
@@ -21,7 +21,7 @@
     transition: 1s ease;
 }
 
-.navbar h1:hover {
+.navbar a:hover {
     color: #FF005C ;
     text-shadow: 2px 2px #13F4EF;
 }
