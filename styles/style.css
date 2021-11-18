@@ -53,15 +53,103 @@
     margin: auto;
     display: block;
     height: auto;
-    width: 50%;
+    width: 70%;
+    position: relative;
+    justify-content: center;
+    z-index: -1;  
 }
 
-.earth button{
-    background-color: gold;
+#country-pins {
     text-align: center;
-    font-size: 24px;
-    padding: 10px 20px;
-    margin: 50px;
+    font-weight: bold;
+
+}
+.earth {
+    text-align: center;
+}
+.earth button {
+    background-color: black;
+    color: lightblue;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#return-home {
+    cursor: pointer;
+    transition: 0.3s;    
+}
+  
+#return-home:hover {
+    transform: scale(1.15);
+}
+  
+#return-home:active {
+    transform: scale(1.15);
+}
+
+#left-turn{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#left-turn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#left-turn span:after {
+    content: '<<';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    left: -40px;
+    transition: 0.5s;
+  }
+
+  #left-turn:hover span {
+    padding-left: 25px;
+}
+
+#left-turn:hover span:after {
+      opacity: 1;
+      right: 0;
+}
+
+
+#right-turn{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#right-turn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#right-turn span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #right-turn:hover span {
+    padding-right: 25px;
+}
+
+#right-turn:hover span:after {
+      opacity: 1;
+      right: 0;
 }
 
 #pin-canada {
