@@ -171,3 +171,8 @@ transition: 1s;
         top: 50px;;
         left: 50px;;
     }
+
+    .money-image{
+        height: 100px;
+        width: auto
+    }

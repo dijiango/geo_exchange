@@ -59,14 +59,48 @@ function renderData(object1) {
            if(currency1 === returnCurrencyType){
       
        const countryCard = document.createElement("div")
+       const cardImage = document.createElement('img')
        countryCard.className = "cards"
        const lastDateUpdated = document.createElement("p")
        const rateAgainstBase = document.createElement("p")
-
+    cardImage.className ='money-image';
+if(currency1 === "CAD"){
+    cardImage.src='currency-images/img1CanadianDollar.jpg'  
+}
+if(currency1 === "USD"){
+    cardImage.src='currency-images/img2USDollar.jpg'  
+}
+if(currency1 === "BRL"){
+    cardImage.src='currency-images/img3BrazillianReal.jpg'  
+}
+if(currency1 === "GBP"){
+    cardImage.src='currency-images/img4BritishPound.jpg'  
+}
+if(currency1 === "SEK"){
+    cardImage.src='currency-images/img5SwedishKrona.jpg'  
+}
+if(currency1 === "EUR"){
+    cardImage.src='currency-images/img6EUEuro.jpg'  
+}
+if(currency1 === "ZAR"){
+    cardImage.src='currency-images/img7SouthAfricanRand.jpg'  
+}
+if(currency1 === "RUB"){
+    cardImage.src='currency-images/img8RussianRuble.jpg'  
+}
+if(currency1 === "JPY"){
+    cardImage.src='currency-images/img9JapaneseYen.jpg'  
+}
+if(currency1 === "AUD"){
+    cardImage.src='currency-images/img92AussiDollar.jpg'  
+}
+if(currency1 === "HKD"){
+    cardImage.src='currency-images/img91HKDollar.jpg'  
+}
        lastDateUpdated.textContent = `Last Updated: ${object1.date}`
        rateAgainstBase.textContent = `${object1.rates[currency1]} ${currency1} per 1 ${currencyType}`
 
-       countryCard.append(lastDateUpdated,rateAgainstBase)
+       countryCard.append(cardImage, lastDateUpdated,rateAgainstBase)
        cardContainer.append(countryCard)
            }
 }
