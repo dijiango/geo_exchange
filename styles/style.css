@@ -289,6 +289,7 @@ body {
             border: 3px;
             color:#68FF00;
             box-shadow: -2px -2px 7px 7px  #FAFF00;
+            background-color: rgba(0, 0, 0, 0.5);
     }
 #form-box {
     position: absolute;
@@ -318,7 +319,7 @@ body {
         color: tomato;
         text-shadow: 2px 2px black;
         box-shadow: -2px -2px 7px 7px  #FAFF00;
-
+    }
     #minimize {
         position: absolute;
         top: 40px;
