@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+ <div id="wrapper">
+    <div class="navBar">
+       <a id="geo-locator" href="#">GEO-LOCATOR</a>
+       <a id="meet-the-team" href="#">MEET THE TEAM</a>
+       <a id="about-this-project" href="#">ABOUT THIS PROJECT</a>
+       <a id="more-features" href="#">MORE FEATURES TO COME</a>
+    </div>
+
+
+  <!---STEPHEN--->
+    <div id="form-box">
+  <button id="minimize">−</button>
+  <form id="submit-currency">
+      Amount<input type="text" name='curr-value' id="curr-value" value="1">
+      <br><br>
+      <label for='base-currency'>Choose Your Currency!</label>
+      <select id="base-currency">
+          <option value='USD'>USD</option>
+          <option value='EUR'>EUR</option>
+          <option value='JPY'>JPY</option>
+          <option value='CAD'>CAD</option>
+          <option value='GBP'>GBP</option>
+          <option value='HKD'>HKD</option>
+          <option value='ZAR'>ZAR</option>
+          <option value='BRL'>BRL</option>
+          <option value='AUD'>AUD</option>
+          <option value='SEK'>SEK</option>
+      </select>
+  <br><br>
+      <label for="return-currency">Exchange To</label>
+      <select id="return-currency">
+          <option value='USD'>USD</option>
+          <option value='EUR' selected="selected">EUR</option>
+          <option value='JPY'>JPY</option>
+          <option value='CAD'>CAD</option>
+          <option value='GBP'>GBP</option>
+          <option value='HKD'>HKD</option>
+          <option value='ZAR'>ZAR</option>
+          <option value='BRL'>BRL</option>
+          <option value='AUD'>AUD</option>
+          <option value='SEK'>SEK</option>
+      </select>
+      <button id="submit-button">Submit</button>
+  </form>
+  </div>
+  <div id="currencyContainer"></div>
+  <!---DIANA--->   
+  <div class="earth">
+        <img id="current-globe" src="earth-images/1.png" alt="globe">
+        <div id="country-pins"></div>
+
+        <button id="left-turn" type="button">left</button>
+        <button id="right-turn" type="button">right</button>
+        <button id="return-home" type="button">Go To Home Country</button>
+        
+  </div>
+
+   <script src="index.js"></script>
+
+</div>
+</body>
+</html>
+

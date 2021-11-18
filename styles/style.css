@@ -1,1 +1,241 @@
 
+.navBar {
+    /* background-color: black; */
+    overflow: hidden;
+}
+
+.navBar a:hover {
+    color: #FF005C ;
+    text-shadow: 2px 2px #13F4EF;
+}
+
+.navBar a {
+    color:silver;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 2%;
+    padding-left: 3%;
+    transition: 1s ease;
+    text-align: center;
+    text-decoration: none;
+} /*padding % update MSU */
+
+#meet-the-team:hover:after {
+    content: url(meet-the-team.png);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about-this-project:hover:after {
+    content: url(about-this-project.png);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+#more-features:hover:after {
+    content: url(more-features.png);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: double;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+} 
+/*msu*/
+
+#current-globe {
+    margin: auto;
+    display: block;
+    height: auto;
+    width: 50%;
+}
+
+.earth button{
+    position: relative;
+    color: cyan;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+    padding: 10px 20px;
+    float:left;
+    margin: 50px;
+    top:150px;
+    transition: 1s;
+} /* text color/size update MSU */
+
+.earth button:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    color: tomato;
+    box-shadow:  -1px -1px 3px 3px ;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ } /* msu */
+
+#country-pins{
+    font-size: x-large;
+    /* font-weight: bold; */
+    font-family: fantasy;
+    text-align: center;
+}
+
+#pin-canada {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 48%;
+}
+
+#pin-united-states {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 11%;
+    left: 52%;
+}
+
+#pin-brasil {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 33%;
+    left: 53%;
+}
+
+#pin-united-kingdom {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 3%;
+    left: 48%;
+}
+
+#pin-sweden {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 3%;
+    left: 51%;
+}
+
+#pin-europe {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 6%;
+    left: 48%;
+}
+
+#pin-south-africa {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 53%;
+    left: 49%;
+}
+
+#pin-russia {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+#pin-japan {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 13%;
+    left: 57%;
+}
+
+#pin-hong-kong {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 19%;
+    left: 53%;
+}
+
+#pin-aussie {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+}
+body {
+    background-image: url("../Space-Image8.jpg");
+    color: azure;
+    
+}
+.cards{
+
+border: solid;
+color:silver;
+border-color:silver;
+padding: 50px;
+margin: 30px;
+float: left;
+text-align: center;
+top: 400px;
+left: 700px;
+width: 300px;
+height: auto;
+box-shadow: #13f4ef;
+transition: 1s;
+}
+
+#form-box{
+    position: absolute;
+    border: thinner solid;
+    color:silver;
+    border-color: black;
+    padding: 50px;
+    margin: 30px;
+    float: left;
+    text-align: center;
+    top: 50px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+    transition: 1s;
+    }
+    #form-box:hover{
+        border: 3px;
+        border-color: tomato;
+        color: tomato;
+        box-shadow: -2px -2px 7px 7px  #13f4ef;
+    } /*MSU*/
+
+    #minimize{
+        position:absolute;
+        top: 40px;;
+        left: 50px;;
+    }
+
+    h1{
+        font-size: x-large;
+    }
+    /*MSU*/
+
+    .money-image{
+        height: 100px;
+        width: auto
+    }
+
