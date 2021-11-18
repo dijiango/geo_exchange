@@ -55,15 +55,16 @@ let cardContainer = document.getElementById("currencyContainer")
 
 
 function renderData(object1) {
-       for(let currency1 in object1.rates){
-           if(currency1 === returnCurrencyType){
-      
-       const countryCard = document.createElement("div")
-       const cardImage = document.createElement('img')
-       countryCard.className = "cards"
-       const lastDateUpdated = document.createElement("p")
-       const rateAgainstBase = document.createElement("p")
-    cardImage.className ='money-image';
+    for(let currency1 in object1.rates){
+        if(currency1 === returnCurrencyType){
+   
+    const countryCard = document.createElement("div")
+    const cardImage = document.createElement('img')
+    countryCard.className = "cards"
+    const cardText = document.createElement('p')
+    const lastDateUpdated = document.createElement("p")
+    const rateAgainstBase = document.createElement("p")
+ cardImage.className ='money-image';
 if(currency1 === "CAD"){
     cardImage.src='currency-images/img1CanadianDollar.jpg';
     cardText.textContent = "The Canadian dollar is the currency of Canada. It is abbreviated with C$ to distinguish it from other currencies. It is divided into 100 cents (¢)."
