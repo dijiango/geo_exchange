@@ -195,7 +195,7 @@ transition: 1s;
 }
 
 #form-box{
-
+    position: absolute;
     border: solid;
     color:silver;
     border-color:silver;
@@ -204,7 +204,7 @@ transition: 1s;
     float: left;
     text-align: center;
     top: 400px;
-    left: 700px;
+    left: 50px;
     width: 300px;
     height: auto;
     box-shadow: #13f4ef;
