@@ -1,4 +1,5 @@
 //STEPHEN
+let pins = document.getElementsByClassName('pins')
 const returnCurrencyTrigger = document.getElementById('return-currency');
 const currencyTrigger = document.getElementById('base-currency');
 const submitCurrencyForm = document.getElementById('submit-currency');
@@ -41,9 +42,7 @@ submitCurrencyForm.addEventListener("submit", (e) => {
         }
         }
     }
-    fetch(`https://api.vatcomply.com/rates?${baseCurrency}`)
-.then(response => response.json())
- .then(data => renderData(data))
+   
 })
 
 
@@ -195,10 +194,50 @@ function createPin(x) {
         pin.id = `pin-${x}`;
         pin.src = "other-images/pin.png";
         pin.alt = "Pin";
-
+        pin.className = "pins";
     currentCountry.append(pin);
-    pin.addEventListener("click", () => console.log("You clicked on", x));
+    pin.addEventListener("click", () => {
+    if(pin.id === `pin-canada`){
+        returnCurrencyType = 'CAD'
+    }
+    if(pin.id === `pin-united-states`){
+        returnCurrencyType = 'USD'
+    }if(pin.id === `hong-king`){
+        returnCurrencyType = 'HKD'
+    }if(pin.id === `pin-brasil`){
+        returnCurrencyType = 'BRL'
+    }if(pin.id === `pin-aussie`){
+        returnCurrencyType = 'AUD'
+    }if(pin.id === `pin-united-kingdom`){
+        returnCurrencyType = 'GBP'
+    }if(pin.id === `pin-canada`){
+        returnCurrencyType = 'CAD'
+    }if(pin.id === `pin-sweden`){
+        returnCurrencyType = 'SEK'
+    }if(pin.id === `pin-europe`){
+        returnCurrencyType = 'EUR'
+    }if(pin.id === `pin-south-africa`){
+        returnCurrencyType = 'ZAR'
+    }
+    
+        fetch(`https://api.vatcomply.com/rates?${baseCurrency}`)
+        .then(response => response.json())
+         .then(data => renderData(data))
+    
+    ,
+    cardContainer.innerHTML ='';
+    
+
+
+
+});
+    
+
 }
+   
+
+
+
 
 //pins for each country
 function canadaPin() {
