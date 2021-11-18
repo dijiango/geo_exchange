@@ -305,3 +305,7 @@ function aussiePin() {
         createPin('aussie');
     }
 }
+
+function myFunc() {
+    console.log("Hi");
+}
