@@ -320,11 +320,8 @@ body {
         text-shadow: 2px 2px black;
         box-shadow: -2px -2px 7px 7px  #FAFF00;
     }
-    #minimize {
-        position: absolute;
-        top: 40px;
-        left: 50px;
-    }
+
+  
 
 
    
