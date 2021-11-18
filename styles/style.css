@@ -165,31 +165,31 @@
     height: 30px;
     width: auto;
     position: absolute;
-    top: 5%;
-    left: 48%;
+    top: 11%;
+    left: 47%;
 }
 
 #pin-united-states {
     height: 30px;
     width: auto;
     position: absolute;
-    top: 11%;
-    left: 52%;
+    top: 18%;
+    left: 53%;
 }
 
 #pin-brasil {
     height: 30px;
     width: auto;
     position: absolute;
-    top: 33%;
-    left: 53%;
+    top: 80%;
+    left: 56%;
 }
 
 #pin-united-kingdom {
     height: 30px;
     width: auto;
     position: absolute;
-    top: 3%;
+    top: 17%;
     left: 48%;
 }
 
@@ -197,23 +197,23 @@
     height: 30px;
     width: auto;
     position: absolute;
-    top: 3%;
-    left: 51%;
+    top: 14%;
+    left: 52%;
 }
 
 #pin-europe {
     height: 30px;
     width: auto;
     position: absolute;
-    top: 6%;
-    left: 48%;
+    top: 20%;
+    left: 46%;
 }
 
 #pin-south-africa {
     height: 30px;
     width: auto;
     position: absolute;
-    top: 53%;
+    top: 117%;
     left: 49%;
 }
 
@@ -221,32 +221,32 @@
     height: 30px;
     width: auto;
     position: absolute;
-    top: 5%;
-    left: 50%;
+    top: 18%;
+    left: 48%;
 }
 
 #pin-japan {
     height: 30px;
     width: auto;
     position: absolute;
-    top: 13%;
-    left: 57%;
+    top: 33%;
+    left: 59%;
 }
 
 #pin-hong-kong {
     height: 30px;
     width: auto;
     position: absolute;
-    top: 19%;
-    left: 53%;
+    top: 46%;
+    left: 54%;
 }
 
 #pin-aussie {
     height: 30px;
     width: auto;
     position: absolute;
-    top: 50%;
-    left: 52%;
+    top: 116%;
+    left: 54%;
 }
 body {
     background-image: url("../Space-Image8.jpg");
