@@ -8,9 +8,10 @@
     height: 2vw;
     z-index: 10;
     border-bottom: none;
+    overflow: hidden;
 }
 
-.navbar a {
+.navbar h1 {
     color:silver;
     font-size: x-large;
     font-weight: bold;
@@ -20,7 +21,7 @@
     transition: 1s ease;
 }
 
-.navbar a:hover {
+.navbar h1:hover {
     color: #FF005C ;
     text-shadow: 2px 2px #13F4EF;
 }
