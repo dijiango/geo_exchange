@@ -171,6 +171,7 @@ width: 300px;
 height: auto;
 box-shadow: #13f4ef;
 transition: 1s;
+background-color: rgba(128, 128, 128, 0.5);
 }
 
 #form-box{
@@ -188,14 +189,18 @@ transition: 1s;
     height: auto;
     box-shadow: #13f4ef;
     transition: 1s;
+    background-color: rgba(128, 128, 128, 0.5);
     }
     #minimize{
-        position:absolute;
-        top: 50px;;
-        left: 50px;;
+        position:relative;
+        top: 0;;
+        left: 0;;
     }
 
     .money-image{
         height: 100px;
         width: auto
+    }
+    #card-text{
+        opacity: 100%
     }
