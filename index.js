@@ -65,7 +65,8 @@ function renderData(object1) {
        const rateAgainstBase = document.createElement("p")
     cardImage.className ='money-image';
 if(currency1 === "CAD"){
-    cardImage.src='currency-images/img1CanadianDollar.jpg'  
+    cardImage.src='currency-images/img1CanadianDollar.jpg';
+    cardText.textContent = "The Canadian dollar is the currency of Canada. It is abbreviated with C$ to distinguish it from other currencies. It is divided into 100 cents (¢)."
 }
 if(currency1 === "USD"){
     cardImage.src='currency-images/img2USDollar.jpg'  
@@ -100,12 +101,11 @@ if(currency1 === "HKD"){
        lastDateUpdated.textContent = `Last Updated: ${object1.date}`
        rateAgainstBase.textContent = `${object1.rates[currency1]} ${currency1} per 1 ${currencyType}`
 
-       countryCard.append(cardImage, lastDateUpdated,rateAgainstBase)
+       countryCard.append(cardImage, rateAgainstBase, cardText, lastDateUpdated)
        cardContainer.append(countryCard)
            }
 }
 }
-
 
 
 
