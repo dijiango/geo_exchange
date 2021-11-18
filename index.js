@@ -1,12 +1,3 @@
-//NAV BAR
-// const nav1 = document.querySelector('#geo-locator');
-// const nav2 = document.querySelector('#meet-the-team');
-// const nav3 = document.querySelector('#about-this-project');
-// const nav4 = document.querySelector('#more-features');
-
-// nav1.addEventListener("mouseover", () => {
-    
-// })
 //STEPHEN
 let pins = document.getElementsByClassName('pins')
 const returnCurrencyTrigger = document.getElementById('return-currency');
@@ -202,12 +193,12 @@ function countryPins() {
     const nullMessage = "Stay tuned for more countries coming to this region!";
 
     if (imgNum === 1) {
-        currentCountry.textContent = "You are currently in the US and Canada";
+        currentCountry.textContent = "You are currently visiting the US and Canada";
         console.log("Img ", imgNum);
         canadaPin();
         unitedStatesPin();
     } else if (imgNum === 2) {
-        currentCountry.textContent = "You are currently in Brazil";
+        currentCountry.textContent = "You are currently visiting Brazil";
         console.log("Img ", imgNum);
         brasilPin();
     } else if (imgNum === 3) {
@@ -217,12 +208,12 @@ function countryPins() {
         currentCountry.textContent = nullMessage;
         console.log("Img ", imgNum);
     } else if (imgNum === 5) {
-        currentCountry.textContent = "You are currently in the UK and Sweden";
+        currentCountry.textContent = "You are currently visiting the UK and Sweden";
         console.log("Img ", imgNum);
         unitedKingdomPin();
         swedenPin();
     } else if (imgNum === 6) {
-        currentCountry.textContent = "You are currently in Europe and South Africa";
+        currentCountry.textContent = "You are currently visiting Europe and South Africa";
         console.log("Img ", imgNum);
         europePin();
         southAfricaPin();
@@ -230,16 +221,16 @@ function countryPins() {
         currentCountry.textContent = nullMessage;
         console.log("Img ", imgNum);
     } else if (imgNum === 8) {
-        currentCountry.textContent = "You are currently in Russia";
+        currentCountry.textContent = "You are currently visiting Russia";
         console.log("Img ", imgNum);
         russiaPin();
     } else if (imgNum === 9) {
-        currentCountry.textContent = "You are currently in Japan and Hong Kong";
+        currentCountry.textContent = "You are currently visiting Japan and Hong Kong";
         console.log("Img ", imgNum);
         japanPin();
         hongKongPin();
     } else if (imgNum === 10) {
-        currentCountry.textContent = "You are currently in Australia";
+        currentCountry.textContent = "You are currently visiting Australia";
         console.log("Img ", imgNum);
         aussiePin();
     } else if (imgNum === 11) {
@@ -384,4 +375,8 @@ function aussiePin() {
     if (imgNum === 10) {
         createPin('aussie');
     }
+}
+
+function myFunc() {
+    console.log("Hi");
 }
