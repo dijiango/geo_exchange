@@ -271,13 +271,21 @@ body {
     transition: 1s;
 }
  .money-image{
-        height: 100px;
+        height: 300px;
         width: auto
     }
     #card-text {
-        opacity: 100%
+        opacity: 100%;
+        font-size: x-large;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 0;
     }
 
+    div.cards p {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 0;
+        padding: 1%
+    }
     div.cards {
         position: absolute;
         border: none;
@@ -292,9 +300,10 @@ body {
     }
     div.cards:hover {
             border: 3px;
-            color:#68FF00;
+            color:#FAFF00;
             box-shadow: -2px -2px 7px 7px  #FAFF00;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(48, 48, 48, 0.7);
+            bottom: 3%;
     }
 #form-box {
     position: absolute;
