@@ -24,8 +24,8 @@
     content: url(meet-the-team.png);
     display: block;
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 27%;
+    left: 30%;
     transform: translate(-50%, -50%);
     border-style: double;
     z-index: +2;
@@ -35,8 +35,8 @@
     content: url(about-this-project.png);
     display: block;
     position: absolute;
-    top: 35%;
-    left: 55%;
+    top: 27%;
+    left: 43%;
     transform: translate(-50%, -50%);
     border-style: double;
     z-index: +2;
@@ -46,8 +46,8 @@
     content: url(more-features.png);
     display: block;
     position: absolute;
-    top: 35%;
-    left: 75%;
+    top: 27%;
+    left: 63%;
     transform: translate(-50%, -50%);
     border-style: double;
     z-index: +2;
