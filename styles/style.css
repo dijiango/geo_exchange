@@ -281,11 +281,14 @@ body {
     div.cards {
         position: absolute;
         border: none;
-        top: 20%;
-        bottom: 1%;
-        left: 68%;
-        width: 20%;
+        top: 5%;
+        bottom: -7%;
+        left: 67%;
+        width: 25%;
         transition: 1s ease-in;
+        padding-top: 2%;
+        padding-right: 2%;
+        padding-left: 2%;
     }
     div.cards:hover {
             border: 3px;
