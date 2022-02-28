@@ -1,6 +1,7 @@
 .navBar {
     background-color: black;
     overflow: hidden;
+    text-align: center;
 }
 
 .navBar a:hover {
@@ -78,7 +79,12 @@
 #country-pins {
     text-align: center;
     font-weight: bold;
+    background-color: black;
+    padding: 10px;
+}
 
+#button-group {
+    margin: 5px;
 }
 .earth {
     text-align: center;
@@ -293,7 +299,6 @@ body {
         position: absolute;
         border: none;
         top: 5%;
-        bottom: -7%;
         left: 67%;
         width: 25%;
         transition: 1s ease-in;
