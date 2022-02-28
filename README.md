@@ -11,7 +11,7 @@ A CLI is not necessary to view this project in browser. Clone the directory and 
 
 GeoExchange was created for the traveler who always plans ahead. Fetching live exchange rates data from the European Central Bank, users can use the <strong>Currency Calculator</strong> to budget their next adventure. Use the <strong>navigation buttons</strong> to rotate the globe and compare your home currency to the top 10 most commonly traded currencies in the world.
 
-##Contributors
+## Contributors
 Please support all the contributors of GeoExchange
 
 * Stephen Avino's [GitHub](https://github.com/stavino) 
