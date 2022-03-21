@@ -2,6 +2,7 @@
 
 This project was built with vanilla Javascript with currency exchange rates data from the [VAT comply API](https://vatcomply.com/) and Earth still images adapted from NASA's Visible Earth Catalog of [The Blue Marble](https://visibleearth.nasa.gov/images/57723/the-blue-marble).
 
+[Demo](https://www.loom.com/share/a8bf4e7c137841fb82ddddcca2924c0c?sharedAppSource=personal_library)
 
 ## Set Up
 
